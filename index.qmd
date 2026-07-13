@@ -1,0 +1,102 @@
+---
+title: "Titanic: Estudo de Caso Completo de Classificação"
+description: "Fluxo de trabalho completo de aprendizado de máquina para prever a sobrevivência de passageiros utilizando dados tabulares estruturados."
+---
+
+## Visão Geral
+
+Este projeto desenvolve um fluxo de trabalho completo de aprendizado de máquina para prever a sobrevivência de passageiros utilizando o conjunto de dados Titanic do Kaggle.
+
+Em vez de focar exclusivamente no desempenho no ranking da competição, o projeto enfatiza todo o processo de modelagem para classificação, incluindo análise exploratória dos dados, engenharia de atributos, transformações de atributos, comparação de modelos e avaliação rigorosa por meio de validação cruzada.
+
+O objetivo final é construir um modelo preditivo capaz de estimar a probabilidade de sobrevivência dos passageiros no conjunto de teste e gerar uma submissão válida para a competição do Kaggle.
+
+---
+
+## Definição do Problema
+
+Dado um conjunto de características dos passageiros, o sistema deve:
+
+1. Explorar e compreender o conjunto de dados.
+2. Preparar e construir atributos preditivos relevantes.
+3. Treinar e comparar múltiplos modelos de classificação.
+4. Prever a sobrevivência de passageiros em observações não vistas.
+
+---
+
+## Metodologia
+
+O projeto segue um pipeline estruturado de aprendizado de máquina:
+
+* Análise Exploratória dos Dados (EDA)
+* Limpeza dos dados e tratamento de valores ausentes
+* Engenharia de atributos
+* Transformações de atributos
+* Codificação de atributos
+* Modelos de baseline
+* Regressão Logística
+* Árvore de Decisão
+* Floresta Aleatória
+* Gradient Boosting
+* Validação cruzada e comparação de modelos
+* Treinamento do modelo final e geração da submissão ao Kaggle
+
+---
+
+## Conjunto de Dados
+
+O projeto utiliza o conjunto de dados **Titanic: Machine Learning from Disaster**, disponível no Kaggle.
+
+O conjunto de dados contém informações demográficas, socioeconômicas e relacionadas à viagem dos passageiros a bordo do RMS Titanic, incluindo:
+
+* Dados demográficos dos passageiros
+* Informações sobre passagens e tarifas
+* Classe do passageiro
+* Relações familiares
+* Porto de embarque
+* Status de sobrevivência (conjunto de treinamento)
+
+O objetivo é prever a sobrevivência dos passageiros presentes no conjunto de teste.
+
+---
+
+## Estrutura do Projeto
+
+O repositório está organizado da seguinte forma:
+
+```text
+kaggle-titanic-pt/
+│
+├── README.md                                   # Visão geral do projeto e instruções de uso.
+├── index.qmd                                   # Página inicial do site em Quarto.
+├── _quarto.yml                                 # Configuração do site em Quarto.
+├── environment.yml                             # Especificação do ambiente Conda.
+├── LICENSE                                     # Licença do projeto.
+│
+├── notebooks/
+│   ├── 01_exploratory_data_analysis.ipynb      # Análise exploratória do conjunto de dados Titanic.
+│   ├── 02_feature_engineering.ipynb            # Engenharia de atributos, transformações e codificação.
+│   └── 03_modeling_and_evaluation.ipynb        # Treinamento, avaliação dos modelos e geração da submissão ao Kaggle.
+│
+├── data/
+│   ├── raw/
+│   │   ├── train.csv                           # Conjunto de treinamento do Kaggle.
+│   │   ├── test.csv                            # Conjunto de teste do Kaggle.
+│   │   └── gender_submission.csv               # Exemplo de arquivo de submissão do Kaggle.
+│   │
+│   └── processed/
+│       ├── 01_data.parquet                     # Conjunto de dados produzido após a análise exploratória.
+│       ├── 01_features.parquet                 # Registro de atributos após a análise exploratória.
+│       ├── 02_data.parquet                     # Conjunto de dados após a engenharia de atributos.
+│       ├── 02_features.parquet                 # Registro de atributos atualizado após a engenharia de atributos.
+│       └── submission.csv                      # Predições finais submetidas ao Kaggle.
+│
+└── _site/
+    └── ...                                     # Site gerado pelo Quarto.
+```
+
+---
+
+## Status
+
+Este projeto documenta um fluxo de trabalho completo de classificação supervisionada, desde a exploração dos dados brutos até a avaliação dos modelos e a geração de uma submissão para o Kaggle.
