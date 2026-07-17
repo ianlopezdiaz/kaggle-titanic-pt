@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ianlopezdiaz.github.io/kaggle-titanic-pt/index.html</loc>
-    <lastmod>2026-07-13T20:33:15.228Z</lastmod>
+    <lastmod>2026-07-13T21:40:26.107Z</lastmod>
   </url>
   <url>
     <loc>https://ianlopezdiaz.github.io/kaggle-titanic-pt/notebooks/01_exploratory_data_analysis.html</loc>
-    <lastmod>2026-07-13T20:51:41.140Z</lastmod>
+    <lastmod>2026-07-17T20:06:54.048Z</lastmod>
   </url>
   <url>
     <loc>https://ianlopezdiaz.github.io/kaggle-titanic-pt/notebooks/02_feature_engineering.html</loc>
-    <lastmod>2026-07-13T21:18:39.185Z</lastmod>
+    <lastmod>2026-07-17T20:07:03.652Z</lastmod>
   </url>
   <url>
     <loc>https://ianlopezdiaz.github.io/kaggle-titanic-pt/notebooks/03_modeling_and_evaluation.html</loc>
-    <lastmod>2026-07-13T21:38:01.782Z</lastmod>
+    <lastmod>2026-07-17T20:07:18.540Z</lastmod>
   </url>
 </urlset>

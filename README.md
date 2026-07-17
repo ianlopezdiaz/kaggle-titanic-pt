@@ -81,13 +81,7 @@ kaggle-titanic-pt/
 
 ### Instale as dependências
 
-Utilizando `pip`:
-
-```bash
-pip install -r requirements.txt
-```
-
-ou crie o ambiente Conda:
+Crie o ambiente Conda:
 
 ```bash
 conda env create -f environment.yml
