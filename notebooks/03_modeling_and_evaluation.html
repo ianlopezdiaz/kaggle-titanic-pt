@@ -449,19 +449,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>sns.set_theme()</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.dummy <span class="im">import</span> DummyClassifier</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> (</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    accuracy_score,</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    precision_score,</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    recall_score,</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    f1_score,</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    roc_auc_score,</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    confusion_matrix,</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    ConfusionMatrixDisplay,</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    classification_report,</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.dummy <span class="im">import</span> DummyClassifier</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> (</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    accuracy_score,</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    precision_score,</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    recall_score,</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    f1_score,</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    roc_auc_score,</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    confusion_matrix,</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    ConfusionMatrixDisplay,</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    classification_report,</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
@@ -2440,7 +2439,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
 <td>0.5</td>
 <td>0.616163</td>
 <td>0.002325</td>
-<td>0.000826</td>
+<td>0.000757</td>
 </tr>
 </tbody>
 </table>
@@ -2498,7 +2497,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
 <td>0.500000</td>
 <td>0.616163</td>
 <td>0.002325</td>
-<td>0.000826</td>
+<td>0.000757</td>
 </tr>
 <tr class="even">
 <th data-quarto-table-cell-role="th">1</th>
@@ -2510,7 +2509,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
 <td>0.877622</td>
 <td>0.831643</td>
 <td>0.005237</td>
-<td>0.053640</td>
+<td>0.050350</td>
 </tr>
 </tbody>
 </table>
@@ -2576,7 +2575,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
 <td>0.500000</td>
 <td>0.616163</td>
 <td>0.002325</td>
-<td>0.000826</td>
+<td>0.000757</td>
 </tr>
 <tr class="even">
 <th data-quarto-table-cell-role="th">1</th>
@@ -2588,7 +2587,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
 <td>0.877622</td>
 <td>0.831643</td>
 <td>0.005237</td>
-<td>0.053640</td>
+<td>0.050350</td>
 </tr>
 <tr class="odd">
 <th data-quarto-table-cell-role="th">2</th>
@@ -2600,7 +2599,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
 <td>0.999385</td>
 <td>0.806936</td>
 <td>0.019526</td>
-<td>0.003682</td>
+<td>0.003598</td>
 </tr>
 </tbody>
 </table>
@@ -2666,7 +2665,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
 <td>0.500000</td>
 <td>0.616163</td>
 <td>0.002325</td>
-<td>0.000826</td>
+<td>0.000757</td>
 </tr>
 <tr class="even">
 <th data-quarto-table-cell-role="th">1</th>
@@ -2678,7 +2677,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
 <td>0.877622</td>
 <td>0.831643</td>
 <td>0.005237</td>
-<td>0.053640</td>
+<td>0.050350</td>
 </tr>
 <tr class="odd">
 <th data-quarto-table-cell-role="th">2</th>
@@ -2690,7 +2689,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
 <td>0.999385</td>
 <td>0.806936</td>
 <td>0.019526</td>
-<td>0.003682</td>
+<td>0.003598</td>
 </tr>
 <tr class="even">
 <th data-quarto-table-cell-role="th">3</th>
@@ -2702,7 +2701,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
 <td>0.997622</td>
 <td>0.824914</td>
 <td>0.004274</td>
-<td>0.086076</td>
+<td>0.086412</td>
 </tr>
 </tbody>
 </table>
@@ -2768,7 +2767,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
 <td>0.500000</td>
 <td>0.616163</td>
 <td>0.002325</td>
-<td>0.000826</td>
+<td>0.000757</td>
 </tr>
 <tr class="even">
 <th data-quarto-table-cell-role="th">1</th>
@@ -2780,7 +2779,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
 <td>0.877622</td>
 <td>0.831643</td>
 <td>0.005237</td>
-<td>0.053640</td>
+<td>0.050350</td>
 </tr>
 <tr class="odd">
 <th data-quarto-table-cell-role="th">2</th>
@@ -2792,7 +2791,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
 <td>0.999385</td>
 <td>0.806936</td>
 <td>0.019526</td>
-<td>0.003682</td>
+<td>0.003598</td>
 </tr>
 <tr class="even">
 <th data-quarto-table-cell-role="th">3</th>
@@ -2804,7 +2803,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
 <td>0.997622</td>
 <td>0.824914</td>
 <td>0.004274</td>
-<td>0.086076</td>
+<td>0.086412</td>
 </tr>
 <tr class="odd">
 <th data-quarto-table-cell-role="th">4</th>
@@ -2816,7 +2815,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
 <td>0.952476</td>
 <td>0.839502</td>
 <td>0.007706</td>
-<td>0.100552</td>
+<td>0.110912</td>
 </tr>
 </tbody>
 </table>
@@ -2872,7 +2871,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
 <td>0.952476</td>
 <td>0.839502</td>
 <td>0.007706</td>
-<td>0.100552</td>
+<td>0.110912</td>
 </tr>
 <tr class="even">
 <th data-quarto-table-cell-role="th">1</th>
@@ -2884,7 +2883,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
 <td>0.877622</td>
 <td>0.831643</td>
 <td>0.005237</td>
-<td>0.053640</td>
+<td>0.050350</td>
 </tr>
 <tr class="odd">
 <th data-quarto-table-cell-role="th">3</th>
@@ -2896,7 +2895,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
 <td>0.997622</td>
 <td>0.824914</td>
 <td>0.004274</td>
-<td>0.086076</td>
+<td>0.086412</td>
 </tr>
 <tr class="even">
 <th data-quarto-table-cell-role="th">2</th>
@@ -2908,7 +2907,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
 <td>0.999385</td>
 <td>0.806936</td>
 <td>0.019526</td>
-<td>0.003682</td>
+<td>0.003598</td>
 </tr>
 <tr class="odd">
 <th data-quarto-table-cell-role="th">0</th>
@@ -2920,7 +2919,7 @@ document.querySelectorAll('.fa-regular.fa-copy').forEach(function(element) {
 <td>0.500000</td>
 <td>0.616163</td>
 <td>0.002325</td>
-<td>0.000826</td>
+<td>0.000757</td>
 </tr>
 </tbody>
 </table>

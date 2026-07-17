@@ -355,9 +355,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#familysize-a-partir-de-sibsp-e-parch" id="toc-familysize-a-partir-de-sibsp-e-parch" class="nav-link" data-scroll-target="#familysize-a-partir-de-sibsp-e-parch"><code>FamilySize</code> (a partir de <code>SibSp</code> e <code>Parch</code>)</a></li>
   <li><a href="#isalone-a-partir-de-familysize" id="toc-isalone-a-partir-de-familysize" class="nav-link" data-scroll-target="#isalone-a-partir-de-familysize"><code>IsAlone</code> (a partir de <code>FamilySize</code>)</a></li>
   <li><a href="#ticketgroupsize-a-partir-de-ticket" id="toc-ticketgroupsize-a-partir-de-ticket" class="nav-link" data-scroll-target="#ticketgroupsize-a-partir-de-ticket"><code>TicketGroupSize</code> (a partir de <code>Ticket</code>)</a></li>
+  <li><a href="#agecategory-a-partir-de-age" id="toc-agecategory-a-partir-de-age" class="nav-link" data-scroll-target="#agecategory-a-partir-de-age"><code>AgeCategory</code> (a partir de <code>Age</code>)</a></li>
   </ul></li>
-  <li><a href="#agecategory-a-partir-de-age" id="toc-agecategory-a-partir-de-age" class="nav-link" data-scroll-target="#agecategory-a-partir-de-age"><code>AgeCategory</code> (a partir de <code>Age</code>)</a>
-  <ul class="collapse">
   <li><a href="#atributos-transformados" id="toc-atributos-transformados" class="nav-link" data-scroll-target="#atributos-transformados">Atributos transformados</a>
   <ul class="collapse">
   <li><a href="#sqrtage-a-partir-de-age" id="toc-sqrtage-a-partir-de-age" class="nav-link" data-scroll-target="#sqrtage-a-partir-de-age"><code>SqrtAge</code> (a partir de <code>Age</code>)</a></li>
@@ -374,7 +373,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#conjunto-final-de-atributos" id="toc-conjunto-final-de-atributos" class="nav-link" data-scroll-target="#conjunto-final-de-atributos">Conjunto final de atributos</a></li>
   <li><a href="#salvando-o-conjunto-de-dados-processado" id="toc-salvando-o-conjunto-de-dados-processado" class="nav-link" data-scroll-target="#salvando-o-conjunto-de-dados-processado">Salvando o conjunto de dados processado</a></li>
   <li><a href="#próximos-passos" id="toc-próximos-passos" class="nav-link" data-scroll-target="#próximos-passos">Próximos passos</a></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
@@ -1043,9 +1041,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Os resultados indicam que as taxas de sobrevivência variam entre diferentes tamanhos de grupos de bilhete, embora a relação seja menos suave do que a observada para <code>FamilySize</code>. Grupos menores de passageiros com o mesmo bilhete tendem a apresentar probabilidades de sobrevivência relativamente maiores, enquanto grupos maiores são menos frequentes e apresentam maior variabilidade devido ao número limitado de observações.</p>
 <p>Em comparação com <code>FamilySize</code>, esse atributo captura um aspecto diferente dos agrupamentos de passageiros, provavelmente refletindo estruturas de reserva ou organização da viagem, em vez de relações familiares. Como resultado, <code>TicketGroupSize</code> fornece informações complementares que podem ajudar os modelos de aprendizado de máquina a identificar padrões adicionais que não são capturados apenas pelas conexões familiares.</p>
 </section>
-</section>
-<section id="agecategory-a-partir-de-age" class="level1">
-<h1><code>AgeCategory</code> (a partir de <code>Age</code>)</h1>
+<section id="agecategory-a-partir-de-age" class="level3">
+<h3 class="anchored" data-anchor-id="agecategory-a-partir-de-age"><code>AgeCategory</code> (a partir de <code>Age</code>)</h3>
 <p>A relação entre idade e sobrevivência provavelmente não é linear. Relatos históricos sugerem que crianças receberam prioridade durante a evacuação, enquanto os padrões de sobrevivência entre adultos e passageiros mais idosos podem apresentar comportamentos mais complexos.</p>
 <p>Para capturar esses possíveis efeitos não lineares de forma mais eficiente, transformamos <code>Age</code> em uma variável categórica agrupando os passageiros em faixas etárias significativas. Isso permite que o modelo aprenda padrões relacionados à idade sem assumir uma relação estritamente linear.</p>
 <div id="cell-35" class="cell" data-execution_count="17">
@@ -1118,6 +1115,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Os resultados mostram diferenças claras nas taxas de sobrevivência entre as categorias de idade. Crianças apresentam a maior probabilidade de sobrevivência, em concordância com as prioridades de evacuação, enquanto adultos e passageiros mais idosos apresentam taxas de sobrevivência comparativamente menores.</p>
 <p>Esses padrões confirmam que a idade possui uma relação não linear com a sobrevivência e justificam a transformação de <code>Age</code> em uma representação categórica. Dessa forma, <code>AgeCategory</code> fornece uma codificação mais estruturada e adequada para os modelos dos efeitos relacionados à idade em comparação com a variável contínua original.</p>
+</section>
+</section>
 <section id="atributos-transformados" class="level2">
 <h2 class="anchored" data-anchor-id="atributos-transformados">Atributos transformados</h2>
 <p>Em contraste com os atributos construídos, que introduzem novas representações dos dados, os atributos transformados modificam a distribuição ou a escala de variáveis existentes sem alterar seu significado fundamental.</p>
@@ -1757,7 +1756,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>O conjunto de dados está agora totalmente preparado para o aprendizado de máquina. No <a href="../notebooks/03_modeling_and_evaluation.html">próximo notebook</a>, construiremos o conjunto de dados para modelagem, dividiremos os dados em conjuntos de treinamento e validação, treinaremos diferentes algoritmos de classificação e compararemos seus desempenhos preditivos. Também avaliaremos a importância dos atributos e o comportamento dos modelos para compreender melhor os fatores que contribuem para a sobrevivência dos passageiros.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
