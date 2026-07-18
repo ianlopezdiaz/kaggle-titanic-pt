@@ -73,6 +73,9 @@ kaggle-titanic-pt/
 ├── environment.yml                             # Especificação do ambiente Conda.
 ├── LICENSE                                     # Licença do projeto.
 │
+├── scripts/
+│   └── publish.sh                              # Executa os notebooks e publica o site no GitHub Pages.
+│
 ├── notebooks/
 │   ├── 01_exploratory_data_analysis.ipynb      # Análise exploratória do conjunto de dados Titanic.
 │   ├── 02_feature_engineering.ipynb            # Engenharia de atributos, transformações e codificação.
@@ -92,8 +95,10 @@ kaggle-titanic-pt/
 │       └── submission.csv                      # Predições finais submetidas ao Kaggle.
 │
 └── _site/
-    └── ...                                     # Site gerado pelo Quarto.
+    └── ...                                     # Site gerado pelo Quarto (ignorado pelo git - publicado via scripts/publish.sh, não versionado).
 ```
+
+O site é publicado no GitHub Pages executando `scripts/publish.sh`, que roda os notebooks e, em seguida, publica com `quarto publish gh-pages`.
 
 ---
 
