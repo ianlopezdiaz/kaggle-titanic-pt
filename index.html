@@ -409,6 +409,9 @@ ul.task-list li input[type="checkbox"] {
 ├── environment.yml                             # Especificação do ambiente Conda.
 ├── LICENSE                                     # Licença do projeto.
 │
+├── scripts/
+│   └── publish.sh                              # Executa os notebooks e publica o site no GitHub Pages.
+│
 ├── notebooks/
 │   ├── 01_exploratory_data_analysis.ipynb      # Análise exploratória do conjunto de dados Titanic.
 │   ├── 02_feature_engineering.ipynb            # Engenharia de atributos, transformações e codificação.
@@ -428,7 +431,8 @@ ul.task-list li input[type="checkbox"] {
 │       └── submission.csv                      # Predições finais submetidas ao Kaggle.
 │
 └── _site/
-    └── ...                                     # Site gerado pelo Quarto.</code></pre>
+    └── ...                                     # Site gerado pelo Quarto (ignorado pelo git - publicado via scripts/publish.sh, não versionado).</code></pre>
+<p>O site é publicado no GitHub Pages executando <code>scripts/publish.sh</code>, que roda os notebooks e, em seguida, publica com <code>quarto publish gh-pages</code>.</p>
 <hr>
 </section>
 <section id="status" class="level2">
